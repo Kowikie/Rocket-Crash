@@ -14,6 +14,9 @@ public class Movement : MonoBehaviour
     [SerializeField] float mainThrust = 1000f;
     [SerializeField] float mainRotation = 200f;
     [SerializeField] AudioClip mainEngine;
+    [SerializeField] ParticleSystem engineParticles;
+    [SerializeField] ParticleSystem rightSideParticles;
+    [SerializeField] ParticleSystem leftSideParticles;
 
     Rigidbody rb;
     AudioSource myAudio;
@@ -36,26 +39,71 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
-            if(!myAudio.isPlaying)
-            {
-                myAudio.PlayOneShot(mainEngine);
-            }
+            StartThrusting();
         }
         else
         {
-            myAudio.Stop();
+            StopThrusting();
         }
+
     }
+
     void ProcessRotation()
     {
         if (Input.GetKey(KeyCode.A))
         {
-            ApplyRotation(mainRotation);
+            RotateLeft();
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            ApplyRotation(-mainRotation);
+            RotateRight();
+        }
+        else
+        {
+            StopRotation();
+        }
+    }
+
+    void StopRotation()
+    {
+        rightSideParticles.Stop();
+        leftSideParticles.Stop();
+    }
+
+    void RotateRight()
+    {
+        ApplyRotation(-mainRotation);
+        if (!leftSideParticles.isPlaying)
+        {
+            leftSideParticles.Play();
+        }
+    }
+
+    void RotateLeft()
+    {
+        ApplyRotation(mainRotation);
+        if (!rightSideParticles.isPlaying)
+        {
+            rightSideParticles.Play();
+        }
+    }
+
+    void StopThrusting()
+    {
+        myAudio.Stop();
+        engineParticles.Stop();
+    }
+
+    void StartThrusting()
+    {
+        rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
+        if (!myAudio.isPlaying)
+        {
+            myAudio.PlayOneShot(mainEngine);
+        }
+        if (!engineParticles.isPlaying)
+        {
+            engineParticles.Play();
         }
     }
 
