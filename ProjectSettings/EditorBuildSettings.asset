@@ -10,5 +10,14 @@ EditorBuildSettings:
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Under.unity
-    guid: 13ef76b510ace02478971314d291f236
+    guid: 002c6127633af7e439930aeee0a8dbd6
+  - enabled: 1
+    path: Assets/Scenes/Both.unity
+    guid: e318deed2d1e1d7489c26f6d51c064c8
+  - enabled: 1
+    path: Assets/Scenes/Forward and Back.unity
+    guid: 1b8b9911f78e0bf42af86ad1f939a3dc
+  - enabled: 1
+    path: Assets/Scenes/BackandForth.unity
+    guid: c6271cd619ecae347a760fceec2f99c3
   m_configObjects: {}

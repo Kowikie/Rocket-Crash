@@ -12,16 +12,21 @@ public class CollisionHandler : MonoBehaviour
     AudioSource myAudio;
 
     bool isTransitioning = false;
+    bool disableCollision = false;
 
     void Start() 
     {
         myAudio = GetComponent<AudioSource>();
     }
 
+    void Update()
+    {
+        DebugKeys();
+    }
 
     void OnCollisionEnter(Collision other) 
     {
-        if (isTransitioning) {return;}
+        if (isTransitioning || disableCollision) {return;}
 
         switch (other.gameObject.tag)
         {
@@ -73,4 +78,17 @@ public class CollisionHandler : MonoBehaviour
         myAudio.PlayOneShot(finish);
         finishParticles.Play();
     }
+
+    void DebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            NextLevel();
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            disableCollision = !disableCollision; //toggle collision
+        }
+    }
+
 }
