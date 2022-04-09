@@ -1096,31 +1096,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8366685188724924775, guid: 1554d8a0f2cb3e44c902d8d1c29374fd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.28184474
+      value: 0.28942072
       objectReference: {fileID: 0}
     - target: {fileID: 8366685188724924775, guid: 1554d8a0f2cb3e44c902d8d1c29374fd, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.04773122
+      value: -0.011729588
       objectReference: {fileID: 0}
     - target: {fileID: 8366685188724924775, guid: 1554d8a0f2cb3e44c902d8d1c29374fd, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.20902565
+      value: 0.08972868
       objectReference: {fileID: 0}
     - target: {fileID: 8366685188724924775, guid: 1554d8a0f2cb3e44c902d8d1c29374fd, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.9351971
+      value: -0.95291495
       objectReference: {fileID: 0}
     - target: {fileID: 8366685188724924775, guid: 1554d8a0f2cb3e44c902d8d1c29374fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 21.349
+      value: 9.452
       objectReference: {fileID: 0}
     - target: {fileID: 8366685188724924775, guid: 1554d8a0f2cb3e44c902d8d1c29374fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 12.848
+      value: 4.319
       objectReference: {fileID: 0}
     - target: {fileID: 8366685188724924775, guid: 1554d8a0f2cb3e44c902d8d1c29374fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -144.025
+      value: -145.853
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1554d8a0f2cb3e44c902d8d1c29374fd, type: 3}
@@ -1262,7 +1262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: 0, y: 11.83, z: -18.06}
+  m_LocalPosition: {x: 0, y: 12.439, z: -20.332}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

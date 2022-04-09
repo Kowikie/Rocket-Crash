@@ -15,9 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Both.unity
     guid: e318deed2d1e1d7489c26f6d51c064c8
   - enabled: 1
-    path: Assets/Scenes/Forward and Back.unity
-    guid: 1b8b9911f78e0bf42af86ad1f939a3dc
+    path: Assets/Scenes/Dodge X.unity
+    guid: ec70444c594f77a42a9b672dce76e7da
   - enabled: 1
-    path: Assets/Scenes/BackandForth.unity
-    guid: c6271cd619ecae347a760fceec2f99c3
+    path: Assets/Scenes/Dodge Y.unity
+    guid: bf18906f9a355734bab79c6a96ab0c39
   m_configObjects: {}
